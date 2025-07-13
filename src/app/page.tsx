@@ -205,14 +205,14 @@ const Home = () => {
       {/* Navbar */}
       <nav
         className={
-          "w-full flex items-center justify-between px-8 py-5 sticky top-0 z-30 border-b " +
+          "w-full flex items-center justify-between px-0 sm:px-8  py-5 sticky top-0 z-30 border-b " +
           (theme === "dark"
             ? "bg-white/10 backdrop-blur-md border-gray-800"
             : "bg-white/80 backdrop-blur-md border-gray-100")
         }
       >
-        <span className="font-extrabold text-xl tracking-tight">
-          SalihBZD<span className="text-indigo-600">.</span>
+        <span className="font-extrabold text-xl tracking-tight invisible sm:visible ">
+          BZD
         </span>
         <div className="flex gap-8 items-center">
           {navLinks.map((link, i) => (
